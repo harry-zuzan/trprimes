@@ -8,7 +8,7 @@ from sympy import isprime
 
 # this produces the left truncatable prime with the larges value
 # there must be more graceful ways to do it
-def largest_ltrunc_prime():
+def largest_ltrunc():
 	"""
 	Computes the largest left truncatable prime https://youtu.be/azL5ehbw_24
 	A left truncatable prime is still prime when the left most digit is
@@ -23,7 +23,7 @@ def largest_ltrunc_prime():
 	Prime = namedtuple('Prime',['value','k'])
 
 	# list single digit prime numbers
-	prime_list = [Prime(x,0) for x in (3,5,7)]
+	prime_list = [Prime(x,0) for x in (2,3,5,7)]
 
 	# the largest single digit prime number
 	N = max([prime.value for prime in prime_list])
@@ -46,7 +46,7 @@ def largest_ltrunc_prime():
 	return N
 
 # this counts the number of left truncatable primes
-def count_ltrunc_prime():
+def count_ltrunc():
 	"""
 	Counts the number of left truncatable primes https://youtu.be/azL5ehbw_24
 	A left truncatable prime is still prime when the left most digit is
@@ -62,7 +62,7 @@ def count_ltrunc_prime():
 	Prime = namedtuple('Prime',['value','k'])
 
 	# list single digit prime numbers
-	prime_list = [Prime(x,0) for x in (3,5,7)]
+	prime_list = [Prime(x,0) for x in (2,3,5,7)]
 
 	count = 0
 
@@ -86,7 +86,7 @@ def count_ltrunc_prime():
 
 # an iterator that produces left truncatable primes in increasing order
 # while storing a minimal number of unused values
-def ordered_ltrunc_prime():
+def ordered_ltrunc():
 	"""
 	Iterates through the left truncatable prime https://youtu.be/azL5ehbw_24
 	A left truncatable prime is still prime when the left most digit is
@@ -101,7 +101,7 @@ def ordered_ltrunc_prime():
 	Prime = namedtuple('Prime',['value','k'])
 
 	# list single digit prime numbers
-	working_list = [Prime(x,0) for x in (3,5,7)]
+	working_list = [Prime(x,0) for x in (2,3,5,7)]
 
 	# stores the set of left truncatable primes that have one more
 	# digit than the working list
