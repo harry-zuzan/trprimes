@@ -37,13 +37,13 @@ pip install trprimes
 ```
 from trprimes import trunc
 
-\# the number of left truncatable primes
+# the number of left truncatable primes
 trunc.count_ltrunc()
 
-\# the largest of left truncatable prime
+# the largest of left truncatable prime
 trunc.largest_ltrunc()
 
-\# iterate through left truncatable primes in ascending order
+# iterate through left truncatable primes in ascending order
 ltp = trunc.ordered_ltrunc()
 next(ltp)
 
