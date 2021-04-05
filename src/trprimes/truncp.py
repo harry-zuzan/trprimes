@@ -53,7 +53,7 @@ def count_ltrunc():
 	dropped.  For example 317 -> 17 -> 7 are prime so 317 is a left 
 	truncatable prime
 
-	returns 4259
+	returns 4260
 	"""
 	
 

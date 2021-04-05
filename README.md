@@ -18,19 +18,35 @@ Python 3 is assumed.
 
 ### Installing
 
-Simply clone the repository.
-
+Using the source code from github
 ```
 git clone https://github.com/harry-zuzan/trprimes.git
+cd trprimes
+python setup.py install
 
+```
 
+Using pip
 ```
 pip install trprimes
-```
-
-And have fun!
 
 ```
-from trprimes import truncp
+
+
+### Examples
 ```
+from trprimes import trunc
+
+\# the number of left truncatable primes
+trunc.count_ltrunc()
+
+\# the largest of left truncatable prime
+trunc.largest_ltrunc()
+
+\# iterate through left truncatable primes in ascending order
+ltp = trunc.ordered_ltrunc()
+next(ltp)
+
+```
+
 
