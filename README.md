@@ -14,7 +14,7 @@ that produces identical results.
 
 ## Getting Started
 
-Python 3 is assumed.
+Use Python 3.7 or greater and follow the install instructions below.
 
 ### Installing
 
@@ -35,7 +35,7 @@ pip install trprimes
 
 ### Examples
 ```
-from trprimes import trunc
+from trprimes import truncp
 
 # the number of left truncatable primes
 trunc.count_ltrunc()
